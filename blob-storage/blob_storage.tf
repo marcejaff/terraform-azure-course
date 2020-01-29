@@ -21,11 +21,11 @@ resource "azurerm_storage_container" "trainingco" {
 }
 
 resource "azurerm_storage_blob" "training-file" {
-  name                   = "traningfile.txt"
+  name                   = "trainingfile.txt"
   storage_account_name   = azurerm_storage_account.trainingsa.name
   storage_container_name = azurerm_storage_container.trainingco.name
   type                   = "Block"
-  source                 = "traningfile.txt"
+  source                 = "trainingfile.txt"
 }
 
 
